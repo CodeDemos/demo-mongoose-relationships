@@ -1,2 +1,4 @@
-# demo-mongoose-relationships
-demo-mongoose-relationships
+mongoose-populate-subdocuments
+================================
+
+Demo mongoose populate documents in an array
