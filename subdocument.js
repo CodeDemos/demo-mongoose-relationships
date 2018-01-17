@@ -60,7 +60,7 @@ mongoose.connect(
       .findByIdAndUpdate(
         'aaaaaaaaaaaaaaaaaaaaaaaa',
         { "$push": {
-            "addresses":  {street: '789 Cactus St.', city: 'Scottsdale', state: 'AZ', zip: 56789} 
+            addresses:  {street: '789 Cactus St.', city: 'Scottsdale', state: 'AZ', zip: 56789} 
           } 
         }, 
         {new: true} 
@@ -113,7 +113,7 @@ mongoose.connect(
     return User
       .findByIdAndUpdate(
         'aaaaaaaaaaaaaaaaaaaaaaaa',
-        { "$pull": { "addresses": { "city": 'Springfield'} } },
+        { $pull: { addresses: { city: 'Springfield'} } },
         {new: true}
       );
   }).then(results => {
